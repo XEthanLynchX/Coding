@@ -1,0 +1,88 @@
+html{
+    padding: 0%;
+    margin: 0%;
+}
+
+h1{
+    background-color: black;
+    color: white;
+    width: 80%;
+    font-size: 40px;
+    margin-left: 10%;
+    margin-top: 0%;
+    padding: 1%;
+}
+
+h2{
+    margin-left: 45%;
+}
+
+.main_sec{
+    display: flex;
+    align-items: center;
+}
+
+.right_col{
+    flex: 2;
+    margin-left: 20%;
+    margin-top: -18%;
+}
+
+.left_col{ 
+    flex: 1;
+}
+
+.container{
+    width: 25%;
+    border: 2px solid black;
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+.user{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.likes{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button{
+    height: 30px;
+    width: 20%;
+    background-color: rgb(255, 255, 96);
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+}
+
+.filler{
+    font-size: 20px;
+    font-weight: 550;
+    margin-left: 7%;
+}
+
+#my_user{
+    width: 10%;
+    border: 2px solid black;
+    padding: 1%;
+    margin-left: 10%;
+}
+
+
+#pfp{
+    border-radius: 50%;
+    margin-left: 10%;
+}
+
+#avatar{
+    display: block;
+    margin-left: 23%;
+}
+
+#my_name{
+    margin-left: 23%;
+}

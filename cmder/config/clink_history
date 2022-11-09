@@ -1,0 +1,21 @@
+|CTAG_1667934763_316112281_8904_0
+|wd
+ls
+ls -1
+ls -a
+|d .
+cd ..
+cd /
+cd codin
+cd gamer
+cd.
+cd .
+cd
+pwd
+open .
+openm
+open
+git
+git config --global user.name "Ethan Lynch"
+git config --global user.email ethanlynch72@gmail.com
+git config --global --list

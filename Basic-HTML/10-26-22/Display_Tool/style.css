@@ -1,0 +1,24 @@
+html {
+    background-color: black;
+    color: aliceblue;
+}
+
+.display {
+    border: 2px solid green;
+}
+
+a {
+    color: aliceblue;
+}
+
+.emojiWrap {
+    width: 250px;
+}
+
+.boxNinja {
+    width: 200px;
+    padding: 0px;
+    margin: 0px;
+    background-color: green;
+}
+

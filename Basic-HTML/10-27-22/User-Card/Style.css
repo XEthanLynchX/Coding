@@ -1,0 +1,38 @@
+.container{
+    height: 350px;
+    width: 1000px;
+    border: 2px solid silver;
+    border-top: 150px solid rgba(8, 134, 134, 0.767);
+    background-color: rgb(255, 255, 255);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1% ;  
+}
+
+#pfp{
+    margin-top: -100px;
+    border-radius: 50%;
+    border: 5px solid gray;
+}
+
+h1{
+    margin-top: 10px
+}
+
+.location{
+    display: inline-block;
+}
+
+p{
+    font-size: 26px;
+    line-height: 1%;
+}
+
+#sa{
+    text-indent: 20%
+}
+
+a{
+    font-size: 26px;
+}
+    

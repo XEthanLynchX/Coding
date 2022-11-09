@@ -1,0 +1,204 @@
+.nav{
+    height: 5%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+font-size: 44px;
+}
+
+.nav_links{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav a{
+    color: aliceblue;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: -100%;
+}
+
+.btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 170, 175);
+    box-shadow: 3px 3px black;
+    height: 40px;
+    width: 150px;
+    font-size: 22px;
+    margin-left: 100%;
+}
+
+.usercard{
+    height: 340px;
+    width: 700px;
+    border: 2px solid silver;
+    border-top: 150px solid rgba(8, 134, 134, 0.767);
+    background-color: rgb(255, 255, 255);
+    margin-left: 35%;
+    margin-top: 1%;
+    padding: 1% ;  
+}
+
+#pfp{
+    margin-top: -100px;
+    border-radius: 50%;
+    border: 5px solid gray;
+}
+
+#jane{
+    margin-top: 10px;
+    margin-left: 3%;
+}
+
+.location{
+    display: inline-flex;
+    margin-left: 3%;
+    margin-top: -10%;
+    margin-bottom: 1%;
+    font-size: 26px;
+}
+
+.dev{
+    font-size: 26px;
+    line-height: 1%;
+    margin-left: 3%;
+}
+
+#edit{
+    font-size: 26px;
+    margin-left: 3%;
+}
+
+#settings{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.edu{
+    height: 140px;
+    width: 710px;
+    border: 2px solid silver;
+    border-top: 50px solid rgba(0, 0, 0, 0.767);
+    background-color: rgb(255, 255, 255);
+    margin-left: -2%;
+    margin-top: 10%;
+    padding: 1% ;  
+}
+
+#edu_header{
+    margin-top: -6%;
+    margin-left: 3%;
+    color: white;
+}
+
+.edu_body{
+    font-size: 26px;
+    line-height: 50%;
+    margin-left: 2%;
+    font-family:sans-serif;
+    margin-top: 3%;
+}
+
+#date{
+    color: silver;
+}
+    
+#main_section{
+display: flex;
+padding: 1%;
+}
+
+#left_col{
+    flex: 4;
+}
+
+#right_col{
+    flex:2;
+}
+
+.connection_requests{
+    border: 3px solid rgb(177, 175, 175);
+    width: 60%;
+    
+}
+
+.request_header{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
+
+span{
+    color: black;
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 50%;
+    font-size: 22px ;
+}
+
+.names{
+    display: flex;
+    align-content: center;
+    margin-top: 5%;
+    padding: 2%;
+    font-size: 22px;
+}
+
+.names > img{
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+
+.accept{
+margin-left: 20%;
+}
+
+.deny{
+    margin-left: -2%;
+}
+
+.your_connections{
+    margin-top: 5%;
+    border: 3px solid rgb(177, 175, 175);
+    width: 60%;
+    
+}
+
+#connection_header{
+    display: flex;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-size: 22px;
+    margin-top: 0;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+}
+
+.view_more{
+    display: flex;
+    justify-content: flex-start;
+    line-height: 300%;
+    border: 2px solid rgb(141, 135, 135);
+    font-size: 22px;
+}
+
+
+
+
+

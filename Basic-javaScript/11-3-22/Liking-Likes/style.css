@@ -1,0 +1,36 @@
+.html{
+    padding: 3%;
+}
+
+.container{
+    width: 25%;
+    border: 2px solid black;
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+.user{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#likes{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button{
+    height: 30px;
+    width: 20%;
+    background-color: rgb(255, 255, 96);
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+}
+
+.filler{
+    font-size: 20px;
+    font-weight: 550;
+    margin-left: 7%;
+}

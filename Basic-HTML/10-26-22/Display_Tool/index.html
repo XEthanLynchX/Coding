@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Understanding Display Properties</h1>
+    <hr>
+    <h2>Block & Inline-Block</h2>
+    <p>The div below me in green is display:block</p>
+    <div class="display">
+        <p class="displayOne">I am block one</p>
+        <p class="displayOne">I am block two</p>
+        <p class="displayOne">I am block three</p>
+        <p class="displayOne">I am block four</p>
+        <p class="displayOne">We are all p tags</p>
+    </div>
+    <p>With these buttons you can change the display properties of the p tags in the box above.</p>
+    <p>You can also add and remove their border to better see what space they are occupying.</p>
+    <button onclick="displayBlock()">Display Block</button>
+    <button onclick="displayInlineBlock()">Display Inline Block</button>
+    <button onclick="displayNone()">Display None</button>
+    <button onclick="displayBorder()">Border</button>
+
+    <hr>
+    <h2>Display Flex</h2>
+    <p>Where the block and inline-block display properties were applied to elements directly, display flex is applied to the parent, as are most of the flex properties.</p>
+
+    <div class="display" id="flexMe">
+        <p>I'm a block level p tag.</p>
+        <p>And I'm a block level p tag.</p>
+        <img src="images/ninja.png" height="100px" alt="ninja">
+        <img src="images/ninja.png" height="50px" alt="ninja">
+        <a href="#">I'm an inline-block a tag.</a>
+        <a href="#">And I'm an inline-block a tag.</a>
+    </div>
+    <p>Use these buttons to change the display properties of the div above.</p>
+    <div>
+        <span>Display:</span>
+        <button onclick="flexMeFlex()" id="flexMeButton">Flex</button>
+        <button onclick="flexMeBlock()" id="blockMeButton">Block</button>
+    </div>
+    <div>
+        <span>Justify-Content:</span>
+        <button class="justify" onclick="justifyMe('justify', 'flex-start', this)">Flex-Start</button>
+        <button class="justify" onclick="justifyMe('justify', 'flex-end', this)">Flex-End</button>
+        <button class="justify" onclick="justifyMe('justify', 'center', this)">Center</button>
+        <button class="justify" onclick="justifyMe('justify', 'space-between', this)">Space-Between</button>
+        <button class="justify" onclick="justifyMe('justify', 'space-around', this)">Space-Around</button>
+        <button class="justify" onclick="justifyMe('justify', 'space-evenly', this)">Space-Evenly</button>
+        <button class="justify" onclick="justifyMe('justify', '', this)">None</button>
+    </div>
+    <div>
+        <span>Align-Items</span>
+        <button class="align" onclick="alignMe('align', 'flex-start', this)">Flex-Start</button>
+        <button class="align" onclick="alignMe('align', 'flex-end', this)">Flex-End</button>
+        <button class="align" onclick="alignMe('align', 'center', this)">Center</button>
+        <button class="align" onclick="alignMe('align', 'stretch', this)">Stretch</button>
+        <button class="align" onclick="alignMe('align', 'baseline', this)">Baseline</button>
+        <button class="align" onclick="alignMe('align', '', this)">None</button>
+    </div>
+
+    <hr>
+    <h2>Flex Wrap</h2>
+    <p>Sometimes we have too much stuff, too many elements, to keep them on one line. That's when we need to wrap them. This is also good for accomodating for smaller screens.</p>
+    <div class="display" id="wrap">
+        <img src="images/emoji.jpg" class="emojiWrap" alt="smiling emoji">
+        <img src="images/emoji.jpg" class="emojiWrap" alt="smiling emoji">
+        <img src="images/emoji.jpg" class="emojiWrap" alt="smiling emoji">
+        <img src="images/emoji.jpg" class="emojiWrap" alt="smiling emoji">
+        <img src="images/emoji.jpg" class="emojiWrap" alt="smiling emoji">
+        <img src="images/emoji.jpg" class="emojiWrap" alt="smiling emoji">
+        <img src="images/emoji.jpg" class="emojiWrap" alt="smiling emoji">
+        <img src="images/emoji.jpg" class="emojiWrap" alt="smiling emoji">
+    </div>
+    <div>
+        <span>Display:</span>
+        <button onclick="wrapMeFlex()" id="wrapMeFlexButton">Display Flex</button>
+        <button onclick="wrapMeBlock()" id="wrapMeBlockButton">Display Block</button>
+    </div>
+    <div>
+        <span>Flex-Wrap:</span>
+        <button onclick="wrapIt()" id="wrapMeWrapButton">Wrap</button>
+        <button onclick="unWrapIt()" id="wrapMeUnwrapButton">Nowrap</button>
+    </div>
+    <div>
+        <span>Gap:</span><span id="gapAmount">0</span>
+        <button onclick="changeGap(-1)">↓</button>
+        <button onclick="changeGap(1)">↑</button>
+    </div>
+    
+    <hr>
+    <h2>Box Model</h2>
+
+    <p>Here we see several pictures. They each are given a green background which we can see within the area of padding. Margin will not have the elements background since it is beyond the element. Border separates the two.</p>
+    <div class="display">
+        <img src="images/ninja.png" class="boxNinja" alt="ninja">
+        <img src="images/ninja.png" class="boxNinja" alt="ninja">
+        <img src="images/ninja.png" class="boxNinja" alt="ninja">
+        <img src="images/ninja.png" class="boxNinja" alt="ninja">
+        <img src="images/ninja.png" class="boxNinja" alt="ninja">
+    </div>
+    <div>
+        <span>Margin: <span id="htmlNinjaMargin">0</span>px</span>
+        <button onclick="changeMargin(-1)">↓</button>
+        <button onclick="changeMargin(1)">↑</button>
+    </div>
+    <div>
+        <span>Border: <span id="htmlNinjaBorder">0</span>px</span>
+        <button onclick="changeBorder(-1)">↓</button>
+        <button onclick="changeBorder(1)">↑</button>
+    </div>
+    <div>
+        <span>Padding: <span id="htmlNinjaPadding">0</span>px</span>
+        <button onclick="changePadding(-1)">↓</button>
+        <button onclick="changePadding(1)">↑</button>
+    </div>
+
+</body>
+</html>
