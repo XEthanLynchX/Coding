@@ -1,6 +1,6 @@
 |CTAG_1667934763_316112281_8904_0
 |wd
-ls
+|s
 ls -1
 ls -a
 |d .
@@ -11,7 +11,7 @@ cd gamer
 cd.
 cd .
 cd
-pwd
+|wd
 open .
 openm
 open
@@ -19,3 +19,8 @@ git
 git config --global user.name "Ethan Lynch"
 git config --global user.email ethanlynch72@gmail.com
 git config --global --list
+pwd
+ls
+man ls
+manls
+man.ls
